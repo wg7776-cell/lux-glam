@@ -1,0 +1,141 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo', sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#081c15,#1b4332,#40916c);
+color:white;
+display:flex;
+justify-content:center;
+}
+
+.container{
+max-width:450px;
+padding:20px;
+}
+
+/* Slider */
+.slider{
+height:280px;
+border-radius:25px;
+overflow:hidden;
+position:relative;
+box-shadow:0 10px 40px rgba(0,0,0,.3);
+}
+
+.slide{
+width:100%;
+height:100%;
+object-fit:cover;
+position:absolute;
+opacity:0;
+transition:.8s;
+}
+
+.slide.active{
+opacity:1;
+}
+
+/* Text */
+.title{
+text-align:center;
+margin:15px 0;
+}
+
+.rating{
+text-align:center;
+color:#ffd700;
+margin-bottom:15px;
+}
+
+/* Price */
+.price-box{
+text-align:center;
+background:rgba(255,255,255,.1);
+padding:15px;
+border-radius:20px;
+margin-bottom:20px;
+}
+
+.old-price{
+text-decoration:line-through;
+color:#ddd;
+}
+
+.new-price{
+font-size:32px;
+color:#52b788;
+font-weight:bold;
+}
+
+.discount{
+background:#52b788;
+display:inline-block;
+padding:6px 12px;
+border-radius:10px;
+margin-top:6px;
+}
+
+/* Form */
+form input,
+form select{
+width:100%;
+padding:14px;
+margin-bottom:12px;
+border-radius:15px;
+border:none;
+background:rgba(255,255,255,.1);
+color:white;
+}
+
+.row{
+display:flex;
+gap:10px;
+}
+
+.row input,
+.row select{
+flex:1;
+}
+
+/* Shipping */
+.shipping-box{
+display:none;
+background:rgba(255,255,255,.15);
+padding:12px;
+border-radius:15px;
+margin-bottom:10px;
+animation:fadeUp .5s;
+}
+
+.total-box{
+background:rgba(255,255,255,.15);
+padding:15px;
+border-radius:18px;
+margin-bottom:15px;
+}
+
+button{
+width:100%;
+padding:16px;
+border:none;
+border-radius:30px;
+background:#52b788;
+color:white;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+transform:scale(1.04);
+}
+
+/* Animation */
+@keyframes fadeUp{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}

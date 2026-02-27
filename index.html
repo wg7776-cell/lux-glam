@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SevenGreen</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Slider -->
+<div class="slider">
+<img src="/images.jpeg" class="slide active">
+<img src="/643707257_122108444985244114_3789859234266430665_n.jpg" class="slide">
+<img src="/643331360_122108444943244114_6215811861500902051_n.jpg" class="slide">
+</div>
+
+<h2 class="title">🌿 SevenGreen صابون طبيعي</h2>
+
+<div class="rating">⭐ 5/5</div>
+
+<div class="price-box">
+<div class="old-price">1200 دج</div>
+<div class="new-price">600 دج</div>
+<div class="discount">🔥 -50%</div>
+</div>
+
+<form id="orderForm">
+
+<input type="text" id="name" placeholder="👤 الاسم الكامل" required>
+
+<div class="row">
+<input type="text" id="baladia" placeholder="🏠 البلدية" required>
+
+<select id="wilaya">
+<option value="">🌍 اختر الولاية</option>
+<option value="300">البليدة</option>
+<option value="400">الجزائر</option>
+<option value="600">وهران</option>
+<option value="800">باقي الولايات</option>
+</select>
+</div>
+
+<input type="tel" id="phone" placeholder="📞 رقم الهاتف" required>
+
+<input type="text" id="address" placeholder="📍 العنوان الكامل" required>
+
+<div class="shipping-box">
+🚚 التوصيل: <span id="shipping">0</span> دج
+</div>
+
+<div class="total-box">
+💰 المجموع: <span id="total">600</span> دج
+</div>
+
+<button type="submit">✅ اطلب الآن</button>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
